@@ -4,21 +4,42 @@
     <title>Google2</title>
 
     <style>
-        #search_bar {
+        .main {
             text-align: center;
+            display: block;
         }
 
-        #logo {
-            text-align: center;
+        .topnav {
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
         }
     </style>
 </head>
 
 <body>
-    <div id=logo>
+    <ul>
+        <li>About</li>
+        <li>Store</li>
+        <li style="float: right">Gmail</li>
+        <li style="float: right"> Images</li>
+        <li style="float: right"> 
+            <img src="imgs/outline_apps_black_24dp.png">
+        </li>
+        <li style="float: right"> Sign In</li>
+    </ul>
+    <div class="main">
         <img src="imgs/googlelogo_color_272x92dp.png">
     </div>
-    <div id="search_bar">
+    <div class="main">
         <form>
             <label for="searchbox"></label>
             <input id ="searchbox" type="text">
