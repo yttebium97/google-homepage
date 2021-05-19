@@ -3,47 +3,82 @@
 <head>
     <title>Google2</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+
     <style>
-        .main {
-            text-align: center;
-            display: block;
-        }
+      .nav{
+          font-family: 'Roboto', sans-serif;
+          display: flex;
+      }
 
-        .topnav {
+      .navleft{
+          justify-content: flex-start;
+          display: flex;
+          flex-direction: row;
+      }
 
-        }
+      .navright{
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+      }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+      #about{
+          grid-area: about;
+      }
 
-        li {
-            display: inline;
-        }
+      #store{
+          grid-area: store;
+      }
+
+      #gmail{
+          grid-area:gmail;
+      }
+
+      #images{
+          grid-area:images;
+      }
+      #apps{
+          grid-area: apps;
+      }
+
+      #sign-in{
+        grid-area: sign-in;
+      }
+
+      .main{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          text-align: center;
+          margin-top: 8%;
+      }
     </style>
 </head>
 
 <body>
-    <ul>
-        <li>About</li>
-        <li>Store</li>
-        <li style="float: right">Gmail</li>
-        <li style="float: right"> Images</li>
-        <li style="float: right"> 
-            <img src="imgs/outline_apps_black_24dp.png">
-        </li>
-        <li style="float: right"> Sign In</li>
-    </ul>
-    <div class="main">
-        <img src="imgs/googlelogo_color_272x92dp.png">
+    <div class="nav">
+        <div class="navleft">
+        <ul id="about"><a href="#">About</a></ul>
+        <ul id="store"><a href="#">Store</a></ul>
+        </div>
+        <div class="navright">
+        <ul id="gmail"><a href="#">Gmail</a></ul>
+        <ul id="images"><a href="#">Images</a></ul>
+        <ul id="apps"><a href="#">Apps</a></ul>
+        <ul id="sign-in"><a href="#">Sign In</a></ul>
+        </div>
     </div>
-    <div class="main">
+    <div class=main>
+        <img src="imgs/googlelogo_color_272x92dp.png" alt="Google Logo">
         <form>
-            <label for="searchbox"></label>
-            <input id ="searchbox" type="text">
+            <input type="text" id="searchbar">
+            <button type="submit">Google Search</button>
+            <button type="submit">I'm Feeling Lucky</button>
         </form>
     </div>
+
 </body>
 </html>
