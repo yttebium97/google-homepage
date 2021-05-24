@@ -7,8 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
 
     <style>
+    
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
       .nav{
-          font-family: 'Roboto', sans-serif;
           display: flex;
       }
 
@@ -51,9 +54,33 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-family: 'Roboto', sans-serif;
           text-align: center;
           margin-top: 8%;
+      }
+
+      .user{
+          border-radius: 50%;
+      }
+
+      footer {
+        color: black;
+        background-color: tomato;
+      }
+      .footleft{
+         justify-content: flex-start;
+          display: flex;
+          flex-direction: row;
+          position: fixed;
+          bottom: 0;
+          left: 1%;
+      }
+      .footright{
+          margin-left: auto;
+          display: flex;
+          flex-direction: row;
+          position: fixed;
+          bottom: 0;
+          right: 1%;
       }
     </style>
 </head>
@@ -68,17 +95,36 @@
         <ul id="gmail"><a href="#">Gmail</a></ul>
         <ul id="images"><a href="#">Images</a></ul>
         <ul id="apps"><a href="#">Apps</a></ul>
-        <ul id="sign-in"><a href="#">Sign In</a></ul>
+        <ul id="sign-in"><a href="#"><img src="imgs/ian.png" class="user"></a></ul>
         </div>
     </div>
     <div class=main>
+        <div>
         <img src="imgs/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
         <form>
+            <div>
             <input type="text" id="searchbar">
+            </div>
+            <div>
             <button type="submit">Google Search</button>
             <button type="submit">I'm Feeling Lucky</button>
+            </div>
         </form>
     </div>
-
+    <footer>
+        <div class="footer-content">
+        <div class="footleft">
+        <ul>Advertising</ul>
+        <ul>Business</ul>
+        <ul>How Search Works</ul>
+        </div>
+        <div class="footright">
+        <ul>Privacy</ul>
+        <ul>Terms</ul>
+        <ul>Settings</ul>
+        </div>
+        </div>
+    </footer>
 </body>
 </html>
